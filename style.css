@@ -102,14 +102,6 @@ h3 {
   border-radius: var(--border-radius);
 }
 
-.heading-example {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px dashed var(--black);
-  padding: 0.25rem;
-  margin: 0.5rem;
-}
-
 .heading-example h2 {
   border: none;
 }
@@ -125,4 +117,13 @@ h3 {
 
 .heading-info > div {
   padding: 1rem;
+}
+
+/* media query / dark mode? */
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --primary-color: #000;
+    --secondary-color: #fff;
+  }
 }
