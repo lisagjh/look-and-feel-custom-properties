@@ -1,0 +1,131 @@
+@font-face {
+  font-family: AvenirRoman;
+  src: url(./font/Avenir-roman.ttf);
+}
+
+@font-face {
+  font-family: AvenirMedium;
+  src: url(./font/Avenir-medium.ttf);
+}
+
+@font-face {
+  font-family: AvenirBlack;
+  src: url(./font/Avenir\ -black.ttf);
+}
+
+/* 
+  
+  */
+
+:root {
+  --accent-color: #ec0201;
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --tertiary-color: #969696;
+  --extra-color: #565656;
+
+  --spacing-big: 1.4rem;
+  --spacing-reg: 0.8rem;
+  --spacing-half: 0.4rem;
+  --spacing-small: 0.2rem;
+
+  --heading-one: 3rem;
+  --heading-two: 2.25rem;
+  --heading-three: 1.75rem;
+
+  --bigfont: "AvenirBlack", Arial, Helvetica, sans-serif;
+  --regularfont: "AvenirMedium", Arial, Helvetica, sans-serif;
+  --romanfont: "AvenirRoman", Arial, Helvetica, sans-serif;
+
+  --border-one: 1px solid black;
+  --border-radius: 6px;
+}
+
+body {
+  font-family: var(--regularfont);
+  background-color: var(--white);
+  line-height: 1.5;
+}
+
+/* Text */
+
+h1 {
+  font-family: var(--big-font);
+  font-size: var(--heading-one);
+  color: var(--accent-color);
+}
+
+h2 {
+  font-family: var(--big-font);
+  font-size: var(--heading-two);
+}
+
+h3 {
+  font-family: var(--big-font);
+  font-size: var(--heading-three);
+}
+
+/* 
+   */
+
+/* Typography */
+
+.medium {
+  font-family: AvenirMedium;
+}
+
+.black {
+  font-family: AvenirBlack;
+}
+
+.roman {
+  font-family: AvenirRoman;
+}
+
+.heading-example {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px dashed var(--black);
+  padding: 0.25rem;
+  margin: 0.5rem;
+}
+
+.heading-example h2 {
+  border: none;
+}
+
+.heading-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.heading-example > div {
+  padding: 0.5rem;
+}
+
+.heading-info > div {
+  padding: 1rem;
+}
+
+/* styling of examples */
+
+.content {
+  width: 80vw;
+  max-width: 40rem;
+  padding: var(--spacing-big);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-example {
+  width: 80%;
+  padding: var(--spacing-reg);
+  margin-bottom: var(--spacing-big);
+  border: var(--border-one);
+  border-radius: var(--border-radius);
+}
