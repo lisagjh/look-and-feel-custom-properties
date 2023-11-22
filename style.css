@@ -18,6 +18,14 @@
   */
 
 :root {
+  --bigfont: "AvenirBlack", Arial, Helvetica, sans-serif;
+  --regularfont: "AvenirMedium", Arial, Helvetica, sans-serif;
+  --romanfont: "AvenirRoman", Arial, Helvetica, sans-serif;
+
+  --heading-one: 3rem;
+  --heading-two: 2.25rem;
+  --heading-three: 1.75rem;
+
   --accent-color: #ec0201;
   --primary-color: #fff;
   --secondary-color: #000;
@@ -29,14 +37,6 @@
   --spacing-half: 0.4rem;
   --spacing-small: 0.2rem;
 
-  --heading-one: 3rem;
-  --heading-two: 2.25rem;
-  --heading-three: 1.75rem;
-
-  --bigfont: "AvenirBlack", Arial, Helvetica, sans-serif;
-  --regularfont: "AvenirMedium", Arial, Helvetica, sans-serif;
-  --romanfont: "AvenirRoman", Arial, Helvetica, sans-serif;
-
   --border-one: 1px solid black;
   --border-radius: 6px;
 }
@@ -45,6 +45,13 @@ body {
   font-family: var(--regularfont);
   background-color: var(--white);
   line-height: 1.5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Text */
@@ -65,9 +72,6 @@ h3 {
   font-size: var(--heading-three);
 }
 
-/* 
-   */
-
 /* Typography */
 
 .medium {
@@ -80,6 +84,22 @@ h3 {
 
 .roman {
   font-family: AvenirRoman;
+}
+
+/* styling of examples */
+
+.content {
+  width: 80vw;
+  max-width: 40rem;
+  padding: var(--spacing-big);
+}
+
+.heading-example {
+  width: 80%;
+  padding: var(--spacing-reg);
+  margin-bottom: var(--spacing-big);
+  border: var(--border-one);
+  border-radius: var(--border-radius);
 }
 
 .heading-example {
@@ -105,27 +125,4 @@ h3 {
 
 .heading-info > div {
   padding: 1rem;
-}
-
-/* styling of examples */
-
-.content {
-  width: 80vw;
-  max-width: 40rem;
-  padding: var(--spacing-big);
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.heading-example {
-  width: 80%;
-  padding: var(--spacing-reg);
-  margin-bottom: var(--spacing-big);
-  border: var(--border-one);
-  border-radius: var(--border-radius);
 }
